@@ -97,4 +97,29 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    /**
+     * nuevo método para conseguir que el sol se mueva.
+     */
+    public void moveSun(){
+       // sun = new Circle();
+        sun.slowMoveHorizontal(-300);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
