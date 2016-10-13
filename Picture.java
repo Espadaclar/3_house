@@ -30,7 +30,7 @@ public class Picture
      */
     public void draw()
     {
-        sun2 = new Circle();
+         sun2 = new Circle();
         sun2.changeColor("green");
         sun2.moveHorizontal(-500);
         sun2.moveVertical(140);
@@ -55,14 +55,18 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
-
+        
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.slowMoveVertical(170);
         
+        
+        
+         
         
     }
 
