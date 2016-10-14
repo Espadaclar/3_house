@@ -102,8 +102,7 @@ public class Picture
      * nuevo método para conseguir que el sol se mueva.
      */
     public void moveSun(){
-       // sun = new Circle();
-        sun.slowMoveHorizontal(-300);
+        sun.slowMoveVertical(160);
     }
 }
 
