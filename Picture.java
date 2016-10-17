@@ -15,7 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
-    private Circle sun2;
+    private Circle cesped;
     private Person juan;
 
     /**
@@ -36,12 +36,12 @@ public class Picture
         juan.moveHorizontal(250);
         
         
-        sun2 = new Circle();
-        sun2.changeColor("green");
-        sun2.moveHorizontal(-500);
-        sun2.moveVertical(140);
-        sun2.changeSize(1000);
-        sun2.makeVisible();
+        cesped = new Circle();
+        cesped.changeColor("green");
+        cesped.moveHorizontal(-500);
+        cesped.moveVertical(140);
+        cesped.changeSize(1000);
+        cesped.makeVisible();
         
         wall = new Square();
         wall.moveHorizontal(-140);
@@ -87,7 +87,7 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
-            sun2.changeColor("black");
+            cesped.changeColor("black");
         }
     }
 
