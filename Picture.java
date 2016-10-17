@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle sun2;
+    private Person juan;
 
     /**
      * Constructor for objects of class Picture
@@ -30,7 +31,12 @@ public class Picture
      */
     public void draw()
     {
-         sun2 = new Circle();
+        juan = new Person();
+        juan.makeVisible();
+        juan.moveHorizontal(250);
+        
+        
+        sun2 = new Circle();
         sun2.changeColor("green");
         sun2.moveHorizontal(-500);
         sun2.moveVertical(140);
@@ -105,6 +111,13 @@ public class Picture
     public void moveSun(){
         sun.slowMoveVertical(170);
         setBlackAndWhite();
+    }
+    
+    /**
+     * mt para que aparexca una persona cuando sea invocado.
+     */
+    public void mostraPersona(){
+        juan.slowMoveHorizontal(-250);
     }
 }
 
