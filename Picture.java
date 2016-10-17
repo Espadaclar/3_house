@@ -81,6 +81,7 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            sun2.changeColor("black");
         }
     }
 
@@ -102,7 +103,8 @@ public class Picture
      * nuevo método para conseguir que el sol se mueva.
      */
     public void moveSun(){
-        sun.slowMoveVertical(160);
+        sun.slowMoveVertical(170);
+        setBlackAndWhite();
     }
 }
 
